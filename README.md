@@ -142,6 +142,31 @@ LAB_00601652:
 
 ### Q#4 Looking inside the function being described in question 3, which function is responsible for locating & retrieving the targetted module (DLL)?
 
+There are only to functions in the function sub_6015c0 that take the one of the parameter and do something with it.
+Assuming the first parameter is the modulename, it should be `FUN_00606c50` if not, then hopefully `FUN_006067c8`.
+
+```c++
+  if (param_1 != 0xe5ab9b45) {
+    iVar2 = FUN_00607564();
+    uVar4 = extraout_ECX;
+    if ((iVar2 == 0) &&
+       (uVar3 = FUN_00606c50(param_1), uVar4 = extraout_ECX_00, (char)uVar3 != '\0')) {
+      iVar2 = FUN_00607564();
+      uVar4 = extraout_ECX_01;
+    }
+    if (iVar2 != 0) {
+      iVar2 = FUN_006067c8(uVar4,param_2);
+      return iVar2;
+    }
+  }
+```
+
+Okay then, lets try... - okay, it seems both functions are wrong. Lets have a further look into the other ones.
+Beginning with `FUN_00607564`.
+
+
+
+> sub_607564
 
 ### Q#5 What type of hashing is being used for the API hashing technique?
 
