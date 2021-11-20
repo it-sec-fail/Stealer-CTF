@@ -180,8 +180,7 @@ Beginning with `FUN_00607564`.
 ### Q#8 What information is being accessed at the address 0X60769A?
 
 
-### Q#9 Looking inside the function being described in question 3, which function is responsible for locating & retrieving the targetted API 
-from the module export table?
+### Q#9 Looking inside the function being described in question 3, which function is responsible for locating & retrieving the targetted API from the module export table?
 
 
 ### Q#10 Diving inside the function being described in question 9, what is being accessed at offset 0X3C within the first passed parameter?
