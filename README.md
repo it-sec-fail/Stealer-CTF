@@ -15,12 +15,20 @@ Compression password: `cyberdefenders.org_NeE6qBxcIo68R3Wj6DWw`
 [stealer.zip](https://download.cyberdefenders.org/misc/stealer.zip)   79b22089b56dbb6b6f422124393fa4ed55ab4f5e
 
 ## Questions
+For the most things we are using some webtools or ghidra.
 
 ### Q#1 The provided sample is fully unpacked. How many sections does the sample contain?
+If you load the `malware.bin` into ghidra, you will see four sections. So that should be the flag.
 
+![GhidraScreenshot](images/sections_ghidra.png)
+
+> 4
 
 ### Q#2 How many imported windows APIs are being used by the sample?
+Also in Ghidra we can see the kernel dll file and the dll registerserver.
 
+
+> 2
 
 ### Q#3 The sample is resolving the needed win APIs at run-time using API hashing. Looking at the DllEntryPoint, which function is responsible for resolving the wanted APIs?
 
