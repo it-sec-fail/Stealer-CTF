@@ -15,9 +15,14 @@ Compression password: `cyberdefenders.org_NeE6qBxcIo68R3Wj6DWw`
 [stealer.zip](https://download.cyberdefenders.org/misc/stealer.zip)   79b22089b56dbb6b6f422124393fa4ed55ab4f5e
 
 ## Questions
+
+### Foreword
+
 For the most things we are using some webtools or ghidra.
 But we have to tell, this is a really hard one. We didn't analyse a malware on this level before.
-Very hard learningrate and quite a lot of banging the head against some walls :-)
+Very hard learningcurve and quite a lot of banging the head against some walls :-)
+
+The official writeup from the author can be found [here](https://cyber-anubis.github.io/malware%20analysis/dridex/). Have fun! We had!
 
 
 ### Q#1 The provided sample is fully unpacked. How many sections does the sample contain?
